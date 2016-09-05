@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>ML Privacy</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Arturf1</h1>
+        <p class="header"></p>
+
+        <ul>
+          <li><a class="buttons github" href="https://github.com/arturf1">GitHub Profile</a></li>
+        </ul>
+        
+        <a href="https://www.linkedin.com/pub/artur-filipowicz/79/327/a80">
+        <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="150" height="33" border="0" alt="View Artur Filipowicz's profile on LinkedIn">
+        </a>
+
+      </header>
+      <section>
+        <h2>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true">
+	<span aria-hidden="true" class="octicon octicon-link"></span></a>ML Privacy</h2>
+
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true">
+	<span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h3>
+
+<p>
+While concerns have been raised about the destructive potential of AI, there is a more immediate and tangible threat, human intruders who seek to use data for malicious purposes. Videos, photos, emails, banking transactions, browsing history, GPS tracks, and other personal data is continuously collected and stored in the cloud by organizations for analysis. That data may be circulated around the Internet without the data owner's knowledge and be at risk of exposure to malicious entities. A few recent data leakages are described by [<a href="http://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/">1</a>]. 
+
+<p>
+The complete problem of maintaining privacy is complex. It is distributed temporarily since data owner's present and past actions can compromise privacy. It is distributed spatially as the data owner has personal information in multiple accounts, devices, and physical locations. The appraoch Professor Kung's group and I explore is privacy protection in the context of machine learning, at the time and location the data owner submits data to a machine learning service. We seek to develop systems which allow the data owner to control the privacy of his data and utilize the idea of Compressive Privacy [<a href="http://www.cs.ioc.ee/ewscs/2016/kung/kung-slides.pdf">2</a>]. 
+
+
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true">
+	<span aria-hidden="true" class="octicon octicon-link"></span></a>Results</h3>
+
+<p>
+To protect images in facial recognition application, we developed a method of selecting features from Fast Fourier Transform and Wavelet Transform  which prevent reconstruction of the original image while maintaining accuracy. The two images below are reconstructions after a  Wavelet Transform and our filtering method. For more details please see [3].
+
+<div align="center">
+<figure>
+<img src="./images/Screenshot from 2016-08-26 13-07-09.png" />
+</figure>
+</div>
+
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true">
+	<span aria-hidden="true" class="octicon octicon-link"></span></a>Code</h3>
+<a href="https://github.com/arturf1/FacialReconPrivacy">https://github.com/arturf1/FacialReconPrivacy</a>
+
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true">
+	<span aria-hidden="true" class="octicon octicon-link"></span></a>Papers</h3>
+
+<iframe src="https://drive.google.com/embeddedfolderview?id=0B0zrU_fRAzNcY2hSbDJlcWRrYnM#list" style="width:100%; border:0;"></iframe>
+
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true">
+	<span aria-hidden="true" class="octicon octicon-link"></span></a>Related Literature </h3>
+
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
