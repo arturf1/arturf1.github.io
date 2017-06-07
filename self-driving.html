@@ -70,7 +70,17 @@ I'm working on extracting data from Grand Theft Auto 5 (GTA 5). While the game i
 <h4>Application 1: Estimating Distances to Stop Signs</h4>
 The first application I'm exploring is detection of stop signs and estimation of distance to stop signs. Using GTA 5, we collected 1.4 million images with and without stop signs under different weather and time conditions. We trained a convolutional neural network to predict the presence of the stop sign and estimate the distance. On game images, the network works well within 20 meters of the stop sign, detecting 95.5% of the stop signs with an average error in distance of 1.2 m to 2.4 m. This is promising for localizing stop signs when approaching intersections.The next major step is to test this network on real world data. For more information please see <a href="https://drive.google.com/file/d/0B0zrU_fRAzNcYkdhaHR6MDVFNUU/view">Using_GTAV_to_Learn_Distances_TRB_Final.pdf</a>.
 
-<h4>Application 2: Testing Deep Driving [<a href="http://deepdriving.cs.princeton.edu/">1</a>] CNN</h4>
+<p /> In a follow up research, I've produced a thesis exploring this problem. This thesis explores the interaction between virtual reality simulation and Deep
+Learning which may develop computer vision that rivals human vision. Again, Grand Theft Auto 5 is used to collect over half a million
+images and corresponding ground truth labels with and without stop signs in various
+lighting and weather conditions. A deep convolutional neural network trained on this
+data and fine tuned on real world data achieves accuracy in stop sign detection of
+over 95% within 20 meters of the stop sign and has a false positive rate of 4% on test
+data from the real world. Additionally, the physical constraints on this problem are
+analysed, a framework for the use of simulators is developed, and domain adaptation
+	      and multi-task learning are explored. For full thesis text please see <a href="https://drive.google.com/file/d/0B0zrU_fRAzNcckUyQ2lYZktRUXc/view">Filipowicz_Artur_Thesis.pdf</a>. For summary presentations of results please see <a href="https://drive.google.com/file/d/0B0zrU_fRAzNcclNub29rSGZRTUk/view">Filipowicz_Artur_Thesis_Presentation.pdf</a> and <a href="https://drive.google.com/file/d/0B0zrU_fRAzNcdHBTQUlReTRwNFk/view">Filipowicz_Bhat_SmartDrivingCar_Summit_Presentation.pdf</a>. The other thesis discussed in the second presentation can be found here [<a href="http://orfe.princeton.edu/~alaink/Theses/SeniorTheses%2717/Nayan_Bhat_DeepFollowing.pdf">1</a>].
+	      
+<h4>Application 2: Testing Deep Driving [<a href="http://deepdriving.cs.princeton.edu/">2</a>] CNN</h4>
 A Deep Driving convolutional neural network driving a car in GTA 5. These videos show very early tests of using GTA 5 for testing the performance of driving agents in real time. The blue dot represents the point where the AI would like to go based on its estimates of the heading of the road. Please see Appendix A of <a href="https://drive.google.com/file/d/0B0zrU_fRAzNca3FkMlZhQVdEYmc/view">Strategies for Training of Deep Neural for Driving.pdf</a>.<br /><br />
 <div align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d-T8gV5mprY" frameborder="0" allowfullscreen></iframe><br /><br />
