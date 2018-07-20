@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+</head>
+<body>
+<div style="visibility: hidden", id="hanzi">是一个我好妈她在家想今很气不明们吃米饭吗的书大认识他人和这本小什爱几来打能名字上三号狗冷同月猫去对喝关太西爸那看电读朋苹果二四五六七八九十岁女怎喜多高住语点兴起系买天友有茶谁前桌子下学儿热医工开生杯你呢漂亮钱午没请视校昨先睡得老里店习听样现做院中水少叫见京觉汉脑雨服话面菜给块喂都哪再坐北说欢要就吧走忙回还也帮游跑快比从到笔道知两钟找问啡咖您懂笑卖错雪最表真踢年事球累国么师车作日东时远教它准让早后商会写但慢望唱病新站长跳件等正药洗条贵班为别鱼奶出离些肉课边近青鲜蛋饼烩赐汤间晚票培羊食炒丝根砂直排锅柿骨然豆汽部级姓科锦腿酸香菠列岗计划技职门称确属位所千鸡蒜萝鲮酱孜腐葱苔腊烧丸红洋油扬娃鱿牛粉肠州虾仁此调责试可资环无任员浇格目室置空境设外内脊柳茄椒干片庄菇辣盖黑玩完路接豫角沫耻耵了机定管始独固常核司于求售董爆宫保筋丁其考销地非韭尖并</div>
+
+<script>
+var hanzi = document.getElementById("hanzi").innerHTML.split("");
+s = Math.ceil(Math.sqrt(hanzi.length))
+document.write("<table style=\"margin-left: auto; margin-right: auto; font-size: 25px;\">");
+for (var i = 0; i < s; i++)
+{
+	document.write("<tr>");
+	for (var j = 0; j < s; j++)
+	{
+		if (typeof hanzi[s*i + j] !== 'undefined')
+		{
+			document.write("<td style=\"padding: 10px;\">" + hanzi[s*i + j] + "</td>");
+		}
+	}
+	document.write("</tr>");
+}
+document.write("</table>");
+</script>
+</body>
+</html>
